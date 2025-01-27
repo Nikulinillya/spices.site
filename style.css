@@ -281,3 +281,36 @@ nav{
  article:hover{
     transform: scale(1.05);
  }
+
+ div a{
+    text-decoration: none;
+ }
+
+ .tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 200px; /* ширина тексту */
+    background-color: black; /* фон тексту */
+    color: white; /* колір тексту */
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+  
+    /* Позиціювання тексту */
+    position: absolute;
+    bottom: 25%; /* Відстань над елементом */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .articles:hover .tooltip-text {
+    visibility: visible;
+  }
+  
